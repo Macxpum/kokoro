@@ -110,12 +110,22 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
 
                     ?>
                     <div class="">
-                        <h1 class="user_name">Имя: <?php echo htmlspecialchars($row["subscribe_user_name"]) ?></h1>
-                        <h1 class="user_phone">Телефон: <?php echo htmlspecialchars($row["subscribe_user_phone"]) ?></h1>
-                        <h1 class="user_email">Email: <?php echo htmlspecialchars($row["subscribe_user_email"]) ?></h1>
-                        <h1 class="user_comment">Комментарий: <?php echo htmlspecialchars($row["subscribe_user_comment"]) ?>
+                        <p class="user_name">
+                        <h1>Имя: <?php echo htmlspecialchars($row["subscribe_user_name"]) ?></h1>
+                        </p>
+                        <p class="user_phone">
+                        <h1>Телефон: <?php echo htmlspecialchars($row["subscribe_user_phone"]) ?></h1>
+                        </p>
+                        <p class="user_email">
+                        <h1>Email: <?php echo htmlspecialchars($row["subscribe_user_email"]) ?></h1>
+                        </p>
+                        <p class="user_comment">
+                        <h1>Комментарий:
+                            <?php echo htmlspecialchars($row["subscribe_user_comment"]) ?>
                         </h1>
-                        <h1 class="user_groups">Выбранные группы:
+                        </p>
+                        <p class="user_groups">
+                        <h1>Выбранные группы:
                             <?php
                             if ($groups_checkbox_1) {
                                 echo "Детская, ";
@@ -128,7 +138,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                             }
                             ?>
                         </h1>
-                        <h1 class="user_directions">Выбранные направления:
+                        </p>
+                        <p class="user_directions">
+                        <h1>Выбранные направления:
                             <?php
                             if ($directions_checkbox_1) {
                                 echo "Киокушинкай каратэ, ";
@@ -141,7 +153,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                             }
                             ?>
                         </h1>
-                        <h1 class="user_messangers">Способы связи:
+                        </p>
+                        <p class="user_messangers">
+                        <h1>Способы связи:
                             <?php
                             if ($messangers_checkbox_1) {
                                 echo "Telegram, ";
@@ -153,12 +167,14 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                                 echo "По телефону";
                             }
                             ?>
-                            <form action="sql_query_del/subscriber_del.php" method="post">
-                                <input type="hidden" name="subscribe_user_id"
-                                    value="<?php echo htmlspecialchars($row["subscribe_user_id"]) ?>">
-                                <input type="submit" class="btn" value="Удалить заявку">
-                            </form>
+
                         </h1>
+                        </p>
+                        <form action="sql_query_del/subscriber_del.php" method="post">
+                            <input type="hidden" name="subscribe_user_id"
+                                value="<?php echo htmlspecialchars($row["subscribe_user_id"]) ?>">
+                            <input type="submit" class="btn" value="Удалить заявку">
+                        </form>
 
                     </div>
                     <?php
