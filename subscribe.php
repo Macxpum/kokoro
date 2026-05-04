@@ -85,6 +85,7 @@
         <footer>
             <?php include 'include/footer.php'; ?>
         </footer>
+        <script src="assets/scripts/autofill_form.js"></script>
     </body>
 
 </html>

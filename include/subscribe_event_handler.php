@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } else {
         mysqli_stmt_close($stmt);
         header("location: ../subscribe.php");
-        echo "<script>alert('Форма не отправлена! Попробуйте отправить еще раз или позже')</script>";
+        echo "<script>alert('Форма не отправлена! Попробуйте отправить еще раз позже')</script>";
         exit();
     }
 

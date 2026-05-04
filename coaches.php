@@ -20,7 +20,7 @@
                 <div class="coach">
                     <div class="coach-subscribe">
                         <img class="coach-img" src="assets/images/Для_заполнения_бд/igor.webp">
-                        <a href="subscribe.php" class="hover subscribe">Записаться</a>
+                        <a href="subscribe.php" onclick="igor()" class="hover subscribe">Записаться</a>
                     </div>
                     <div class="coach-info">
                         <span class="coach-surname">Петровичев<br>
@@ -37,7 +37,7 @@
                 <div class="coach">
                     <div class="coach-subscribe">
                         <img class="coach-img" src="assets/images/Для_заполнения_бд/denis.webp">
-                        <a href="subscribe.php" class="hover subscribe">Записаться</a>
+                        <a href="subscribe.php" onclick="denis()" class="hover subscribe">Записаться</a>
                     </div>
                     <div class="coach-info">
                         <span class="coach-surname">Войтенок<br>

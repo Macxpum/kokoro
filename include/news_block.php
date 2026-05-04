@@ -4,11 +4,11 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
 $page_patch = $_SERVER['REQUEST_URI'];
 $limit = null;
 if ($page_patch == "/news") {
-    $limit = 6;
+    $limit = '';
 } else {
-    $limit = 3;
+    $limit = 'LIMIT 3';
 }
-$stmt = mysqli_prepare($connect, "SELECT * FROM `news` ORDER BY `news_id` DESC LIMIT $limit");
+$stmt = mysqli_prepare($connect, "SELECT * FROM `news` ORDER BY `news_id` DESC $limit");
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 while ($row = mysqli_fetch_assoc($result)) {

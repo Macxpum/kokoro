@@ -16,7 +16,6 @@
             <section class="news">
                 <?php include("include/news_block.php") ?>
             </section>
-            <a href="" class="btn hover">ЕЩЁ</a>
         </main>
         <footer>
             <?php include 'include/footer.php'; ?>
