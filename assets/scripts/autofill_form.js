@@ -1,5 +1,6 @@
 function denis() {
   window.location.href = "subscribe.php";
+  console.log("Denis");
   const childCheckBox = document.querySelector("input[name='group-child']");
   const teenageCheckBox = document.querySelector("input[name='group-teenage']");
   const kiokushinkaiCheckBox = document.querySelector(
@@ -14,6 +15,7 @@ function denis() {
     kiokushinkaiCheckBox,
     judoSamboCheckBox,
   ];
+  console.log(setChecked);
   setChecked.forEach((checkBox) => {
     if (checkBox) {
       checkBox.setAttribute("checked", "checked");
@@ -22,6 +24,7 @@ function denis() {
 }
 function igor() {
   window.location.href = "subscribe.php";
+  console.log("Igor");
   const adultCheckBox = document.querySelector("input[name='group-adult']");
   const teenageCheckBox = document.querySelector("input[name='group-teenage']");
   const judoSamboCheckBox = document.querySelector(
@@ -36,6 +39,7 @@ function igor() {
     budokaiCheckBox,
     judoSamboCheckBox,
   ];
+  console.log(setChecked);
   setChecked.forEach((checkBox) => {
     if (checkBox) {
       checkBox.setAttribute("checked", "checked");
