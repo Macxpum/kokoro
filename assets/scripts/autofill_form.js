@@ -16,7 +16,7 @@ function denis() {
   ];
   setChecked.forEach((checkBox) => {
     if (checkBox) {
-      checkBox.checked = true;
+      checkBox.setAttribute("checked", "checked");
     }
   });
 }
@@ -38,7 +38,7 @@ function igor() {
   ];
   setChecked.forEach((checkBox) => {
     if (checkBox) {
-      checkBox.checked = true;
+      checkBox.setAttribute("checked", "checked");
     }
   });
 }
