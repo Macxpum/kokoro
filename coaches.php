@@ -20,7 +20,7 @@
                 <div class="coach">
                     <div class="coach-subscribe">
                         <img class="coach-img" src="assets/images/Для_заполнения_бд/igor.webp">
-                        <p onclick="igor()" class="hover subscribe">Записаться</p>
+                        <a href="subscribe.php?coach=igor" class="hover subscribe">Записаться</a>
                     </div>
                     <div class="coach-info">
                         <span class="coach-surname">Петровичев<br>
@@ -37,7 +37,7 @@
                 <div class="coach">
                     <div class="coach-subscribe">
                         <img class="coach-img" src="assets/images/Для_заполнения_бд/denis.webp">
-                        <p onclick="denis()" class="hover subscribe">Записаться</p>
+                        <a href="subscribe.php?coach=denis" class="hover subscribe">Записаться</a>
                     </div>
                     <div class="coach-info">
                         <span class="coach-surname">Войтенок<br>
@@ -66,7 +66,6 @@
             </div>
             <?php include 'include/footer.php'; ?>
         </footer>
-        <script src="assets/scripts/autofill_form.js"></script>
     </body>
 
 </html>
