@@ -66,7 +66,15 @@
             <section class="map">
                 <p>Адрес: <a href="https://yandex.ru/maps/-/CPB3U4ik" class="hover">Московская обл., г.Электроугли,
                         ул.Школьная д.4</a></p>
-                <img src="assets/images/index/map.webp" alt="карта">
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.ru/maps/21642/elektrougli/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Электроугли</a><a
+                        href="https://yandex.ru/maps/21642/elektrougli/house/shkolnaya_ulitsa_4/Z0EYdAZhTk0GQFtvfXtwdH9kZw==/?ll=38.211781%2C55.715373&utm_medium=mapframe&utm_source=maps&z=17"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Школьная улица, 4 на карте
+                        Электроуглей — Яндекс Карты</a><iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=38.211781%2C55.715373&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.211781%2C55.715373&whatshere%5Bzoom%5D=17&z=17"
+                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe></div>
                 <a href="https://yandex.ru/maps/-/CPB3U4ik" class="hover btn">подробнее</a>
             </section>
 
