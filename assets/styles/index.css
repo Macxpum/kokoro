@@ -161,6 +161,13 @@
   width: 1123px;
   aspect-ratio: 1497/854;
 }
+.map > div iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
 .map > p {
   width: 112%;
   height: 47px;
