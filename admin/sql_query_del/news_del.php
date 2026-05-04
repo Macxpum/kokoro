@@ -2,7 +2,12 @@
 
 require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
 
-$news_id = (int) $_POST["news-id"];
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["news-id"])) {
+    $news_id = (int) $_POST["news-id"];
+} else {
+    echo "<script>alert('Неверные данные!'); location.href = '/admin/index.php';</script>";
+    exit;
+}
 $stmt = mysqli_prepare($connect, "SELECT `news_image` FROM `news` WHERE `news_id` = ?;");
 mysqli_stmt_bind_param($stmt, 'i', $news_id);
 mysqli_stmt_execute($stmt);
