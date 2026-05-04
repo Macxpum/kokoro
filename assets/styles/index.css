@@ -157,7 +157,10 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.map > div {
+  width: 1123px;
+  aspect-ratio: 1497/854;
+}
 .map > p {
   width: 112%;
   height: 47px;
