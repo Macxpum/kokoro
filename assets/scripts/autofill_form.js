@@ -1,4 +1,5 @@
 function denis() {
+  window.location.href = "subscribe.php";
   const childCheckBox = document.querySelector("input[name='group-child']");
   const teenageCheckBox = document.querySelector("input[name='group-teenage']");
   const kiokushinkaiCheckBox = document.querySelector(
@@ -20,6 +21,7 @@ function denis() {
   });
 }
 function igor() {
+  window.location.href = "subscribe.php";
   const adultCheckBox = document.querySelector("input[name='group-adult']");
   const teenageCheckBox = document.querySelector("input[name='group-teenage']");
   const judoSamboCheckBox = document.querySelector(
