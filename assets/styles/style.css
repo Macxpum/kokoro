@@ -240,3 +240,12 @@ footer {
     opacity: 0.3;
   }
 }
+.news-empty {
+  font-family: "Source Code Pro";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: rgba(106, 0, 0, 1);
+  text-decoration: none;
+}
