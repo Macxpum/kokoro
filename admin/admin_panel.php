@@ -115,7 +115,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                         <h1 class="user_email">Email: <?php echo htmlspecialchars($row["subscribe_user_email"]) ?></h1>
                         <h1 class="user_comment">Комментарий: <?php echo htmlspecialchars($row["subscribe_user_comment"]) ?>
                         </h1>
-                        <h1 class="user_groups">
+                        <h1 class="user_groups">Выбранные группы:
                             <?php
                             if ($groups_checkbox_1) {
                                 echo "Детская, ";
@@ -128,7 +128,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                             }
                             ?>
                         </h1>
-                        <h1 class="user_directions">
+                        <h1 class="user_directions">Выбранные направления:
                             <?php
                             if ($directions_checkbox_1) {
                                 echo "Киокушинкай каратэ, ";
@@ -141,7 +141,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                             }
                             ?>
                         </h1>
-                        <h1 class="user_messangers">
+                        <h1 class="user_messangers">Способы связи:
                             <?php
                             if ($messangers_checkbox_1) {
                                 echo "Telegram, ";
