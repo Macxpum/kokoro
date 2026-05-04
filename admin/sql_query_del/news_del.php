@@ -17,8 +17,12 @@ if (!empty($row["news_image"]) && $_SERVER['DOCUMENT_ROOT'] . $row["news_image"]
 mysqli_stmt_close($stmt);
 $stmt = mysqli_prepare($connect, "DELETE FROM `news` WHERE `news_id` = ? LIMIT 1;");
 mysqli_stmt_bind_param($stmt, "i", $news_id);
-mysqli_stmt_execute($stmt);
-mysqli_stmt_close($stmt);
-echo "<script>alert('Удалено успешно!'); location.href = '/admin/index.php';</script>";
-exit;
-?>
+if (mysqli_stmt_execute($stmt)) {
+    mysqli_stmt_close($stmt);
+    echo "<script>alert('Удалено успешно!'); location.href = '/admin/index.php';</script>";
+    exit;
+} else {
+    mysqli_stmt_close($stmt);
+    echo "<script>alert('Не удалось!'); location.href = '/admin/index.php';</script>";
+    exit;
+}

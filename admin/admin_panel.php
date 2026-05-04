@@ -90,50 +90,75 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                 }
                 mysqli_stmt_execute($stmt);
                 $result = mysqli_stmt_get_result($stmt);
-                function boolConvertation($value)
-                {
-                    if ($value == "") {
-                        return "НЕ ВЫБРАНО";
-                    } else {
-                        return "ВЫБРАНО";
-                    }
-                }
+
                 while ($row = mysqli_fetch_assoc($result)) {
                     $groups = json_decode($row["subscribe_user_groups"]);
                     $directions = json_decode($row["subscribe_user_directions"], true);
                     $messangers = json_decode($row["subscribe_user_messangers"], true);
 
+                    $groups_checkbox_1 = $groups["0"];
+                    $groups_checkbox_2 = $groups["1"];
+                    $groups_checkbox_3 = $groups["2"];
 
+                    $directions_checkbox_1 = $directions["0"];
+                    $directions_checkbox_2 = $directions["1"];
+                    $directions_checkbox_3 = $directions["2"];
 
-                    $groups_checkbox_1 = boolConvertation($groups["0"]);
-                    $groups_checkbox_2 = boolConvertation($groups["1"]);
-                    $groups_checkbox_3 = boolConvertation($groups["2"]);
-
-                    $directions_checkbox_1 = boolConvertation($directions["0"]);
-                    $directions_checkbox_2 = boolConvertation($directions["1"]);
-                    $directions_checkbox_3 = boolConvertation($directions["2"]);
-
-                    $messangers_checkbox_1 = boolConvertation($messangers["0"]);
-                    $messangers_checkbox_2 = boolConvertation($messangers["1"]);
-                    $messangers_checkbox_3 = boolConvertation($messangers["2"]);
+                    $messangers_checkbox_1 = $messangers["0"];
+                    $messangers_checkbox_2 = $messangers["1"];
+                    $messangers_checkbox_3 = $messangers["2"];
 
                     ?>
                     <div class="">
-                        <h1 class="user_name"><?php echo htmlspecialchars($row["subscribe_user_name"]) ?></h1>
-                        <h1 class="user_phone"><?php echo htmlspecialchars($row["subscribe_user_phone"]) ?></h1>
-                        <h1 class="user_email"><?php echo htmlspecialchars($row["subscribe_user_email"]) ?></h1>
-                        <h1 class="user_comment"><?php echo htmlspecialchars($row["subscribe_user_comment"]) ?></h1>
-                        <h1 class="user_groups">Детская: <?php echo htmlspecialchars($groups_checkbox_1) ?>; Подростковая:
-                            <?php echo htmlspecialchars($groups_checkbox_2) ?>; Взрослая:
-                            <?php echo htmlspecialchars($groups_checkbox_3) ?>;</h1>
-                        <h1 class="user_directions">Киокушинкай каратэ:
-                            <?php echo htmlspecialchars($directions_checkbox_1) ?>;
-                            Дзюдо / Самбо: <?php echo htmlspecialchars($directions_checkbox_2) ?>; Будокай каратэ:
-                            <?php echo htmlspecialchars($directions_checkbox_3) ?>;
+                        <h1 class="user_name">Имя: <?php echo htmlspecialchars($row["subscribe_user_name"]) ?></h1>
+                        <h1 class="user_phone">Телефон: <?php echo htmlspecialchars($row["subscribe_user_phone"]) ?></h1>
+                        <h1 class="user_email">Email: <?php echo htmlspecialchars($row["subscribe_user_email"]) ?></h1>
+                        <h1 class="user_comment">Комментарий: <?php echo htmlspecialchars($row["subscribe_user_comment"]) ?>
                         </h1>
-                        <h1 class="user_messangers">Telegram: <?php echo htmlspecialchars($messangers_checkbox_1) ?>; Max:
-                            <?php echo htmlspecialchars($messangers_checkbox_2) ?>; По телефону:
-                            <?php echo htmlspecialchars($messangers_checkbox_3) ?>;</h1>
+                        <h1 class="user_groups">
+                            <?php
+                            if ($groups_checkbox_1) {
+                                echo "Детская, ";
+                            }
+                            if ($groups_checkbox_2) {
+                                echo "Подростковая, ";
+                            }
+                            if ($groups_checkbox_3) {
+                                echo "Взрослая ";
+                            }
+                            ?>
+                        </h1>
+                        <h1 class="user_directions">
+                            <?php
+                            if ($directions_checkbox_1) {
+                                echo "Киокушинкай каратэ, ";
+                            }
+                            if ($directions_checkbox_2) {
+                                echo "Дзюдо / Самбо, ";
+                            }
+                            if ($directions_checkbox_3) {
+                                echo "Будокай каратэ";
+                            }
+                            ?>
+                        </h1>
+                        <h1 class="user_messangers">
+                            <?php
+                            if ($messangers_checkbox_1) {
+                                echo "Telegram, ";
+                            }
+                            if ($messangers_checkbox_2) {
+                                echo "Max, ";
+                            }
+                            if ($messangers_checkbox_3) {
+                                echo "По телефону";
+                            }
+                            ?>
+                            <form action="sql_query_del/subscriber_del.php" method="post">
+                                <input type="hidden" name="subscribe_user_id"
+                                    value="<?php echo htmlspecialchars($row["subscribe_user_id"]) ?>">
+                                <input type="submit" class="btn" value="Удалить заявку">
+                            </form>
+                        </h1>
 
                     </div>
                     <?php
