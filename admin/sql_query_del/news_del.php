@@ -1,6 +1,6 @@
 <?php
 
-include($_SERVER['DOCUMENT_ROOT'] . "/php__connect/connect__db.php");
+require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
 
 $news_id = (int) $_POST["news-id"];
 $stmt = mysqli_prepare($connect, "SELECT `news_image` FROM `news` WHERE `news_id` = ?;");

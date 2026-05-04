@@ -1,5 +1,5 @@
 <?php
-include("../php__connect/connect__db.php");
+require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 

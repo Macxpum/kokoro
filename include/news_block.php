@@ -1,8 +1,8 @@
 <?php
-include("php__connect/connect__db.php");
+require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
 
 $page_patch = $_SERVER['REQUEST_URI'];
-$limit;
+$limit = null;
 if ($page_patch == "/news") {
     $limit = 6;
 } else {

@@ -42,6 +42,7 @@ jobs:
           find . -mindepth 1 -maxdepth 1 \
             ! -name ".git" \
             ! -name ".github" \
+            ! -name ".gitignore" \
             ! -name ".vscode" \
             ! -name ".idea" \
             ! -name "*.log" \
