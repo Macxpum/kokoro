@@ -67,12 +67,12 @@
                 <p>Адрес: <a href="https://yandex.ru/maps/-/CPB3U4ik" class="hover">Московская обл., г.Электроугли,
                         ул.Школьная д.4</a></p>
                 <div style="position:relative;overflow:hidden;"><a
-                        href="https://yandex.ru/maps/21642/elektrougli/?utm_medium=mapframe&utm_source=maps"
-                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Электроугли</a><a
-                        href="https://yandex.ru/maps/21642/elektrougli/house/shkolnaya_ulitsa_4/Z0EYdAZhTk0GQFtvfXtwdH9kZw==/?ll=38.211781%2C55.715373&utm_medium=mapframe&utm_source=maps&z=17"
-                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Школьная улица, 4 на карте
-                        Электроуглей — Яндекс Карты</a><iframe
-                        src="https://yandex.ru/map-widget/v1/?ll=38.211781%2C55.715373&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.211781%2C55.715373&whatshere%5Bzoom%5D=17&z=17"
+                        href="https://yandex.ru/maps/org/sportklub_tori/19492307910/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Спортклуб Тори</a><a
+                        href="https://yandex.ru/maps/21642/elektrougli/category/sports_hall_gym/41430094175/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Спортивный, тренажёрный зал в
+                        Электроуглях</a><iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=38.211615%2C55.715323&mode=poi&poi%5Bpoint%5D=38.211265%2C55.715314&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D19492307910&z=18.8"
                         width="560" height="400" frameborder="1" allowfullscreen="true"
                         style="position:relative;"></iframe></div>
                 <a href="https://yandex.ru/maps/-/CPB3U4ik" class="hover btn">подробнее</a>
