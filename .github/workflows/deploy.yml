@@ -21,6 +21,11 @@ jobs:
           printf "%s" "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
 
+      - name: Debug key file
+        run: |
+          file ~/.ssh/deploy_key
+          head -n 3 ~/.ssh/deploy_key
+
       - name: Add server to known_hosts
         run: |
           mkdir -p ~/.ssh
