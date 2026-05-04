@@ -1,0 +1,88 @@
+.title {
+  text-transform: uppercase;
+  display: block;
+  font-family: "Inter";
+  font-weight: 860;
+  transform: scaleY(0.8);
+  font-size: 12.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(160, 1, 1, 1);
+  text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+  align-self: center;
+  margin-left: 100px;
+}
+.contacts {
+  margin-block: 60px;
+  width: 100%;
+  height: 2238px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 200px 0px 200px;
+  background-image: url(../images/index/Pattern.webp);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+.post {
+  font-family: "Source Code Pro";
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+.name,
+.contact-contact {
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(106, 0, 0, 1);
+  text-decoration: none;
+}
+.name {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.btn {
+  text-transform: uppercase;
+  width: 498px;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-weight: 750;
+  transform: scaleY(0.8);
+  font-size: 2.25rem;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-decoration: none;
+}
+.map {
+  width: 99%;
+  aspect-ratio: 1.75;
+}
+
+footer {
+  height: 340px;
+  background-image: url();
+}
+.conection_with_us {
+  display: none;
+}

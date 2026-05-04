@@ -1,0 +1,159 @@
+.title {
+  text-transform: uppercase;
+  display: block;
+  font-family: "Inter";
+  font-weight: 860;
+  transform: scaleY(0.8);
+  font-size: 12.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(160, 1, 1, 1);
+  text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
+/* контейнер */
+
+.signup-form {
+  width: 52%;
+  height: 1800px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 170px;
+}
+
+/* лёгкий иероглиф */
+
+.signup-form::after {
+  content: "";
+  width: 486px;
+  height: 1080px;
+  position: absolute;
+  top: -163px;
+  left: 448px;
+  background-image: url("/assets/images/kanji.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -999;
+}
+
+/* заголовки */
+
+.signup-form label,
+.signup-form h3 {
+  font-family: "Inter";
+  font-weight: 970;
+  transform: scaleY(0.8);
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: rgba(66, 66, 66, 1);
+  margin-left: 41px;
+}
+
+/* инпуты */
+
+.signup-form input[type="text"],
+.signup-form input[type="tel"],
+.signup-form input[type="email"],
+.signup-form textarea {
+  width: 100%;
+  height: 110px;
+  border: 1px solid #aaaaaa;
+  background: #fcfcfc;
+  padding: 37px 41px;
+  font-size: 15px;
+  color: rgba(164, 164, 164, 1);
+
+  font-family: "Inter";
+  font-weight: 970;
+  transform: scaleY(0.8);
+  font-size: 1.875rem;
+  line-height: 100%;
+  letter-spacing: 5%;
+}
+
+/* textarea */
+
+.signup-form textarea {
+  height: 190px;
+  padding: 31px;
+  resize: none;
+}
+
+/* 2 колонки */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+}
+.form-col {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* чекбоксы */
+.checkbox-block {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+input[type="checkbox"] {
+  width: 40px;
+  height: 36px;
+  font-size: 15px;
+  background-color: rgba(252, 252, 252, 1);
+  border: 1px rgba(170, 170, 170, 1) solid;
+  cursor: pointer;
+}
+
+/* кнопка */
+
+.signup-form button {
+  display: block;
+  margin-inline: auto;
+
+  width: 260px;
+  height: 55px;
+
+  background: black;
+  color: white;
+
+  border: none;
+
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  cursor: pointer;
+}
+
+/* политика */
+
+.policy {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 13px;
+  color: #393939;
+}
+
+.policy a {
+  color: #6a0000;
+  text-decoration: none;
+}
+footer {
+  height: 340px;
+  background-image: url();
+}
+.conection_with_us {
+  display: none;
+}

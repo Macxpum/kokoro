@@ -1,0 +1,200 @@
+.title {
+  text-transform: uppercase;
+  display: block;
+  font-family: "Inter";
+  font-weight: 860;
+  transform: scaleY(0.8);
+  font-size: 12.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(160, 1, 1, 1);
+  text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+  align-self: flex-start;
+  margin-left: 100px;
+}
+.directions {
+  width: 100%;
+  padding: 110px 84px 82px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 140px;
+  background-image: url(../images/schedule/Pattern.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.direction {
+  width: 100%;
+  height: 436px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.direction-title {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 750;
+  transform: scaleY(0.8);
+  font-size: 3.75rem;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: rgba(0, 0, 0, 1);
+}
+.direction-info {
+  text-transform: uppercase;
+  border-top: solid 2px #d6d5d5;
+  width: 100%;
+  height: 331px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.direction-info_group {
+  width: 100%;
+  height: 100%;
+  padding: 47px 60px 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.group-categoru {
+  font-family: "Inter";
+  transform: scaleY(0.8);
+  font-weight: 510;
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 1);
+  justify-self: flex-start;
+}
+.group-days,
+.group-times,
+.group-hall {
+  font-family: "Inter";
+  transform: scaleY(0.8);
+  font-weight: 370;
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 1);
+}
+.group-hall {
+  justify-self: flex-end;
+}
+.btn {
+  text-transform: uppercase;
+  width: 498px;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-weight: 750;
+  transform: scaleY(0.8);
+  font-size: 2.25rem;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-decoration: none;
+}
+.first_class {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 602px;
+  padding: 70px 60px 0px 60px;
+}
+.first_class > h1 {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 750;
+  transform: scaleY(0.8);
+  font-size: 3.75rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(0, 0, 0, 1);
+}
+.red {
+  color: rgba(160, 1, 1, 1);
+}
+.things {
+  width: 100%;
+  padding: 0 40px;
+  height: 396px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: solid 2px #d6d5d5;
+  border-bottom: solid 2px #d6d5d5;
+  margin-block: 110px;
+}
+.thing {
+  width: 100px;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 510;
+  transform: scaleY(0.8);
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(0, 0, 0, 1);
+  text-wrap: nowrap;
+}
+.thing:nth-child(2) {
+  position: relative;
+  left: 180px;
+}
+.thing:nth-child(3) {
+  position: relative;
+  left: 180px;
+}
+.thing:nth-child(4) {
+  position: relative;
+  left: 70px;
+}
+.thing:nth-child(5) {
+  position: relative;
+  left: -127px;
+}
+.thing:nth-child(6) {
+  position: relative;
+  left: 27px;
+}
+.thing:nth-child(7) {
+  position: relative;
+  left: 127px;
+}
+.thing:nth-child(8) {
+  position: relative;
+  left: 127px;
+}
+.announcement {
+  font-family: "Source Code Pro";
+  width: 93%;
+  font-weight: 700;
+  font-size: 2.3125rem;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(106, 0, 0, 1);
+  margin-bottom: 110px;
+  text-transform: lowercase;
+}
+.announcement::first-letter {
+  text-transform: uppercase;
+}
+footer {
+  height: 340px;
+  background-image: url();
+}
+.conection_with_us {
+  display: none;
+}

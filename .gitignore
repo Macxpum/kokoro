@@ -1,0 +1,18 @@
+# Local environment and secrets
+*.env
+*.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+.osp/
+# Runtime logs and temp files
+*.log
+*.tmp
+
+# Build and deployment leftovers
+.github/*.local

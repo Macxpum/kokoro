@@ -1,0 +1,51 @@
+name: Deploy to masterhost
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          printf "%s" "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Add server to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "${{ secrets.DEPLOY_PORT }}" "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Ensure target directory exists
+        run: |
+          TARGET_PATH="$(printf '%s' '${{ secrets.DEPLOY_PATH }}' | sed "s/[[:space:]]*\\/[[:space:]]*/\\//g; s/^[[:space:]]*//; s/[[:space:]]*$//")"
+          ssh -i ~/.ssh/deploy_key -p "${{ secrets.DEPLOY_PORT }}" \
+            "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+            "mkdir -p '$TARGET_PATH'"
+
+      - name: Deploy files with tar over SSH
+        run: |
+          TARGET_PATH="$(printf '%s' '${{ secrets.DEPLOY_PATH }}' | sed "s/[[:space:]]*\\/[[:space:]]*/\\//g; s/^[[:space:]]*//; s/[[:space:]]*$//")"
+          find . -mindepth 1 -maxdepth 1 \
+            ! -name ".git" \
+            ! -name ".github" \
+            ! -name ".osp" \
+            ! -name ".vscode" \
+            ! -name ".idea" \
+            ! -name "*.log" \
+            ! -name "*.gitignore" \
+            ! -name "*.md" \
+            -print0 | tar --null -T - -czf - | ssh -i ~/.ssh/deploy_key -p "${{ secrets.DEPLOY_PORT }}" \
+            "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+            "tar -xzf - -C '$TARGET_PATH'"

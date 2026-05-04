@@ -1,0 +1,186 @@
+.title {
+  text-transform: uppercase;
+  display: block;
+  font-family: "Inter";
+  font-weight: 860;
+  transform: scaleY(0.8);
+  font-size: 12.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(160, 1, 1, 1);
+  text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+  align-self: flex-start;
+  margin-left: 100px;
+}
+.block-slogan {
+  height: 1885px;
+  width: 100%;
+  padding: 66px 75px 75px 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../images/index/Pattern.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.block-slogan > h1 {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 640;
+  transform: scaleY(0.8);
+  font-size: 4.375rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 1);
+  text-align: justify;
+}
+.red {
+  color: rgba(160, 1, 1, 1);
+}
+.block-slogan > p {
+  padding-left: 28px;
+  width: 68%;
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 46px;
+  letter-spacing: 2%;
+  text-align: justify;
+  color: rgba(0, 0, 0, 1);
+  align-self: flex-start;
+  text-align: justify;
+}
+.block-slogan > p + p {
+  align-self: flex-end;
+  width: 78%;
+  padding-left: 0;
+  margin-bottom: 105px;
+}
+
+.school_leader {
+  margin-top: 78px;
+  width: 100%;
+  height: 884px;
+  display: flex;
+  justify-content: space-between;
+}
+.school_leader > img {
+  width: 787px;
+  height: 787px;
+  box-shadow: 10px 10px 0px 5px rgba(197, 197, 197, 1);
+}
+.about_leader {
+  width: 52%;
+  height: 748px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.about_leader > p {
+  font-family: "Source Code Pro";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  text-align: justify;
+  color: rgba(31, 31, 31, 1);
+}
+.news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin: 72px 34px;
+}
+.news > h1 {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 640;
+  transform: scaleY(0.8);
+  font-size: 4.375rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(130, 130, 130, 1);
+}
+
+.newsgroup_bloks {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.news-block {
+  width: 500px;
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-img {
+  width: 100%;
+  height: 60%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: #000;
+}
+.news-time_pub {
+  font-family: "Inter";
+  transform: scaleY(0.8);
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(160, 1, 1, 1);
+  align-self: flex-start;
+}
+.news-heading {
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-family: "Inter";
+  font-weight: 690;
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+.news-text {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 38px;
+  letter-spacing: 3%;
+  color: rgba(127, 127, 127, 1);
+}
+.news > a {
+  text-transform: uppercase;
+  width: 498px;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-weight: 750;
+  transform: scaleY(0.8);
+  font-size: 2.25rem;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-decoration: none;
+}
+
+footer {
+  height: 340px;
+  background-image: url();
+}
+.conection_with_us {
+  display: none;
+}
