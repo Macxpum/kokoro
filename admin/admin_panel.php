@@ -82,7 +82,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                     <button type="submit" class="btn">Добавить</button>
                 </form>
             </div>
-            <div class="subscribe_user" id="subscribe_user">
+            <div class="subscribe_user" id="subscribe_user" align="center">
                 <?php
                 $stmt = mysqli_prepare($connect, "SELECT * FROM `subscribe_user` ORDER BY `subscribe_user_id`");
                 if (!$stmt) {
@@ -109,7 +109,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/connect__bd/connect__bd.php";
                     $messangers_checkbox_3 = $messangers["2"];
 
                     ?>
-                    <div class="">
+                    <div>
                         <p class="user_name">
                         <h1>Имя: <?php echo htmlspecialchars($row["subscribe_user_name"]) ?></h1>
                         </p>
