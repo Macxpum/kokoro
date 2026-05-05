@@ -1,18 +1,2 @@
-/* Adaptive overrides for news page (desktop-first)
-   Breakpoints: <=1200, <=768, <=480
-*/
-
-@media (max-width: 1200px) {
-   .news { padding: 0 24px; }
-}
-
-@media (max-width: 768px) {
-   .newsgroup_bloks { display: flex; flex-direction: column; gap: 16px; }
-   .news article { width: 100%; }
-}
-
 @media (max-width: 480px) {
-   .title { font-size: 1.5rem; }
-   .news article p { font-size: 0.95rem; }
 }
-

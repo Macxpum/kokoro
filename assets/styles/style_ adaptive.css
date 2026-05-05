@@ -1,40 +1,3 @@
-/* ================================ 
-   ============ fonts ============= 
-   ================================ 
-*/
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter/Inter.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter/Inter-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Code Pro";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Code Pro";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro-Italiс.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
 /* reset */
 
 *,
@@ -65,14 +28,14 @@ header {
   height: 156px;
   margin-bottom: 44px;
 }
-.header-nav,
-.footer-nav {
-  width: 100%;
-  height: 100%;
-  padding-inline: 47px;
+.header-nav-mobile {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+.header-nav {
+  display: none;
+}
+.footer-nav {
+  padding-inline: 25px;
 }
 a.logo {
   text-transform: uppercase;
@@ -117,28 +80,6 @@ a.logo {
   text-align: center;
 }
 
-.header-nav-mobile {
-  width: 100%;
-  height: 100vh;
-  display: none;
-  background-color: linear-gradient(270deg, #d4d2d2 0%, #cccccc 100%);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-.header-nav-mobile > .header-ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  overflow-y: auto;
-}
-.header-nav-mobile > .header-ul > li {
-  width: 100%;
-}
 /* ================================ 
    ============= main ============= 
    ================================ 

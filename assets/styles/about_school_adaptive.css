@@ -1,24 +1,2 @@
-/* Adaptive overrides for about_school page (desktop-first)
-   Breakpoints: <=1200, <=768, <=480
-*/
-
-@media (max-width: 1200px) {
-   .school_leader { gap: 20px; }
-   .leader_photo { width: 260px; }
-}
-
-@media (max-width: 768px) {
-   .slogan { font-size: 2rem; text-align: center; }
-   .school_leader { display: flex; flex-direction: column; align-items: center; }
-   .leader_photo { width: 220px; }
-   .about_leader { padding: 0 16px; }
-   .news .newsgroup_bloks { display: flex; flex-direction: column; gap: 16px; }
-}
-
 @media (max-width: 480px) {
-   .title { font-size: 1.5rem; }
-   .slogan { font-size: 1.25rem; }
-   .leader_photo { width: 160px; }
-   .about_leader p { font-size: 0.95rem; }
-   .news .newsgroup_bloks { padding: 0 12px; }
 }

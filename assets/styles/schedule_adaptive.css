@@ -1,20 +1,2 @@
-/* Adaptive overrides for schedule page (desktop-first)
-   Breakpoints: <=1200, <=768, <=480
-*/
-
-@media (max-width: 1200px) {
-   .directions { gap: 20px; }
-}
-
-@media (max-width: 768px) {
-   .direction { padding: 0 16px; }
-   .direction-info { display: flex; flex-direction: column; gap: 12px; }
-   .direction-info_group { display: flex; flex-direction: column; gap: 6px; }
-}
-
 @media (max-width: 480px) {
-   .title { font-size: 1.4rem; }
-   .group-categoru, .group-days, .group-times { font-size: 0.95rem; }
-   .things { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 0 12px; }
 }
-
