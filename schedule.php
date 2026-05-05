@@ -5,6 +5,7 @@
     <head>
         <?php include 'include/head.php'; ?>
         <link rel="stylesheet" href="assets/styles/schedule.css">
+        <link rel="stylesheet" href="assets/styles/schedule_adaptive.css">
     </head>
 
     <body>

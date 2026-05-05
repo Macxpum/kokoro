@@ -5,6 +5,7 @@
     <head>
         <?php include 'include/head.php'; ?>
         <link rel="stylesheet" href="assets/styles/news.css">
+        <link rel="stylesheet" href="assets/styles/news_adaptive.css">
     </head>
 
     <body>

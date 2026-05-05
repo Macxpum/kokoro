@@ -1,0 +1,23 @@
+/* Adaptive overrides for coaches page (desktop-first)
+   Breakpoints: <=1200, <=768, <=480
+*/
+
+@media (max-width: 1200px) {
+   .coach { gap: 18px; }
+   .coach-img { width: 180px; }
+}
+
+@media (max-width: 768px) {
+   .title-box { padding: 0 16px; }
+   .coaches { display: flex; flex-direction: column; gap: 20px; }
+   .coach { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+   .coach .coach-info { text-align: center; }
+   .coach-img { width: 220px; }
+   .subscribe { width: 100%; display: block; }
+}
+
+@media (max-width: 480px) {
+   .coach-img { width: 160px; }
+   .coach-info span { display: block; font-size: 0.95rem; }
+   .about_us { padding: 0 12px; }
+}

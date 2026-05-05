@@ -5,6 +5,7 @@
     <head>
         <?php include 'include/head.php'; ?>
         <link rel="stylesheet" href="assets/styles/contacts.css">
+        <link rel="stylesheet" href="assets/styles/contacts_adaptive.css">
     </head>
 
     <body>

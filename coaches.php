@@ -5,6 +5,7 @@
     <head>
         <?php include 'include/head.php'; ?>
         <link rel="stylesheet" href="assets/styles/coaches.css">
+        <link rel="stylesheet" href="assets/styles/coaches_adaptive.css">
     </head>
 
     <body>

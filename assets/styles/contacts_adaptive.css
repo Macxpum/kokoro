@@ -1,0 +1,22 @@
+/* Adaptive overrides for contacts page (desktop-first)
+   Breakpoints: <=1200, <=768, <=480
+*/
+
+@media (max-width: 1200px) {
+   .contacts { gap: 18px; }
+   .contact { align-items: flex-start; }
+}
+
+@media (max-width: 768px) {
+   .contacts { padding: 0 16px; }
+   .contact { display: flex; flex-direction: column; gap: 6px; }
+   .map { width: 100%; height: auto; }
+   .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+   .title { font-size: 1.5rem; }
+   .contact-contact { font-size: 1rem; }
+   .map { display: block; width: 100%; margin: 12px 0; }
+}
+

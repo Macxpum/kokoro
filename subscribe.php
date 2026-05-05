@@ -5,6 +5,7 @@
     <head>
         <?php include 'include/head.php'; ?>
         <link rel="stylesheet" href="assets/styles/subscribe.css">
+        <link rel="stylesheet" href="assets/styles/subscribe_adaptive.css">
     </head>
 
     <body>
