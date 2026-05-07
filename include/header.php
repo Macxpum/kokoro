@@ -28,14 +28,14 @@
         if (isset($_SESSION['admin_id'])) {
             echo '<li class="nav-link hover"><a href="admin/admin_panel.php">Панель администратора</a></li>';
         } ?>
-        <li><a class="logo" href="/">KOKO<span>RO</span></a>
+
         <li class="mobile__menu__li">
             <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000">
                 <path
                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
         </li>
-        </li>
+        <li><a class="logo" href="/">KOKO<span>RO</span></a></li>
         <li class="nav-link hover"><a href="about_school">о школе</a></li>
         <li class="nav-link hover"><a href="schedule">расписание</a></li>
         <li class="nav-link hover"><a href="coaches">тренеры</a></li>
