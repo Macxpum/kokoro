@@ -124,6 +124,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 .header-nav-mobile {
   width: 100%;
@@ -145,6 +146,7 @@ header {
   overflow-y: auto;
 }
 .header-nav-mobile > .header-ul > li {
+  text-align: center;
   width: 100%;
 }
 /* ================================ 

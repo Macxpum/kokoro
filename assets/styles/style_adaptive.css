@@ -1,214 +1,170 @@
-/* reset */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  zoom: 0.75;
-  font-family: "Inter", sans-serif;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-/* ================================ 
+@media (max-width: 480px) {
+  /* ================================ 
    ============ header ============ 
    ================================ 
 */
-header {
-  margin-inline: auto;
-  max-width: 1920px;
-  height: 156px;
-  margin-bottom: 44px;
-}
-.header-nav-mobile {
-  display: flex;
-}
-.header-nav {
-  display: none;
-}
-.footer-nav {
-  padding-inline: 25px;
-}
-a.logo {
-  text-transform: uppercase;
-  width: 264px;
-  height: 72px;
-  font-family: "Inter";
-  transform: scaleY(0.8);
-  font-weight: 640;
-  font-size: 3.75rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: rgba(0, 0, 0, 1);
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-
-  & > span {
-    color: rgba(160, 1, 1, 1);
+  header {
+    max-width: 390px;
+    height: auto;
+    margin-bottom: 44px;
   }
-}
-.header-ul,
-.footer-ul {
-  width: 69.21875%;
-  flex-wrap: wrap;
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-link > a {
-  text-transform: uppercase;
-  display: block;
+  .header-nav-mobile {
+    display: flex;
+  }
+  .header-nav,
+  .footer-nav {
+    display: none;
+  }
+  a.logo {
+    text-transform: uppercase;
+    width: 264px;
+    height: 72px;
+    font-family: "Inter";
+    transform: scaleY(0.8);
+    font-weight: 640;
+    font-size: 3.75rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
 
-  font-family: "Inter";
-  transform: scaleY(0.8);
-  font-weight: 750;
-  font-size: 1.875rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: rgba(0, 0, 0, 1);
-  text-decoration: none;
-  text-align: center;
-}
+    & > span {
+      color: rgba(160, 1, 1, 1);
+    }
+  }
 
-/* ================================ 
+  /* ================================ 
    ============= main ============= 
    ================================ 
 */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1920px;
-  margin-inline: auto;
-}
-/* ================================ 
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    margin-inline: auto;
+  }
+  /* ================================ 
    ============ footer ============ 
    ================================ 
 */
-footer {
-  margin-inline: auto;
-  max-width: 1920px;
-  height: 960px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 58px 296px;
-  background-image: url(../images/index/Pattern-footer.webp);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.conection_with_us {
-  width: 76%;
-  height: 586px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-.conection_with_us > h1 {
-  width: 600px;
-  height: 84px;
-  font-family: "Inter";
-  transform: scaleY(0.8);
-  font-weight: 870;
-  font-size: 4.375rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: rgba(0, 0, 0, 1);
-  align-self: center;
-}
-.contact-info_block {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  gap: 50px;
-  margin-bottom: 60px;
-  background-image: url(../images/index/cancu.webp);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.contact-info {
-  width: 100%;
-  height: 38px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-wrap: nowrap;
-}
-.contact-info > span {
-  font-family: "Source Code Pro";
-  font-weight: 600;
-  font-size: 1.875rem;
-  line-height: 100%;
-  letter-spacing: 2%;
-  color: rgba(0, 0, 0, 1);
-}
-.contact-info > span + a {
-  font-family: "Source Code Pro";
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 100%;
-  letter-spacing: 2%;
-  color: rgba(106, 0, 0, 1);
-  text-decoration: none;
-  margin-top: 19px;
-}
-.footer-logo {
-  width: 89px;
-  height: 89px;
-}
-.footer-nav {
-  padding: 0;
-  height: 100px;
-}
-.footer-ul {
-  width: 100%;
-}
-.privat_policy {
-  font-family: "Inter";
-  transform: scaleY(0.8);
-  font-weight: 750;
-  font-size: 1.25rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: rgba(170, 170, 170, 1);
-  text-decoration: none;
-}
-/* ================================ 
+  footer {
+    margin-inline: auto;
+    max-width: 1920px;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url(../images/index/Pattern-footer.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .conection_with_us {
+    width: 76%;
+    height: 586px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .conection_with_us > h1 {
+    width: 600px;
+    height: 84px;
+    font-family: "Inter";
+    transform: scaleY(0.8);
+    font-weight: 870;
+    font-size: 4.375rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    align-self: center;
+  }
+  .contact-info_block {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 60px;
+    background-image: url(../images/index/cancu.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .contact-info {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: wrap;
+  }
+  .contact-info > span {
+    font-family: "Source Code Pro";
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: rgba(0, 0, 0, 1);
+  }
+  .contact-info > span + a {
+    font-family: "Source Code Pro";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: rgba(106, 0, 0, 1);
+    text-decoration: none;
+    margin-top: 19px;
+  }
+  .footer-logo {
+    width: 89px;
+    height: 89px;
+  }
+  .footer-nav {
+    padding: 0;
+    height: 100px;
+  }
+  .footer-ul {
+    width: 100%;
+  }
+  .privat_policy {
+    font-family: "Inter";
+    transform: scaleY(0.8);
+    font-weight: 750;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(170, 170, 170, 1);
+    text-decoration: none;
+  }
+  /* ================================ 
    ========= @media-query ========= 
    ================================ 
 */
-.hover {
-  transition: opacity 0.2s ease-in-out;
-}
-
-@media (hover: hover) {
-  .hover:hover {
-    opacity: 0.3;
+  .hover {
+    transition: opacity 0.2s ease-in-out;
   }
-}
-.news-empty {
-  font-family: "Source Code Pro";
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 100%;
-  letter-spacing: 2%;
-  color: rgba(106, 0, 0, 1);
-  text-decoration: none;
+
+  @media (hover: hover) {
+    .hover:hover {
+      opacity: 0.3;
+    }
+  }
+  .news-empty {
+    font-family: "Source Code Pro";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: rgba(106, 0, 0, 1);
+    text-decoration: none;
+  }
 }
