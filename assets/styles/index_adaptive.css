@@ -44,6 +44,7 @@
     font-size: 0.625rem;
   }
   .direction > img {
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
