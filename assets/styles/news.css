@@ -16,6 +16,7 @@
 
 .news {
   width: 100%;
+  padding-inline: 20px;
   display: flex;
   align-items: start;
   justify-content: space-between;
