@@ -43,5 +43,6 @@
         <li class="nav-link hover"><a href="contacts">контакты</a></li>
         <li class="nav-link hover"><a href="subscribe">записаться</a></li>
     </ul>
+    <a class="logo" href="/">KOKO<span>RO</span></a>
 </nav>
 <script src="assets/scripts/header.js" async></script>

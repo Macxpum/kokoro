@@ -4,9 +4,9 @@
    ================================ 
 */
   header {
-    max-width: 390px;
+    width: 350px;
     height: auto;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
   }
   .header-nav-mobile {
     display: flex;
