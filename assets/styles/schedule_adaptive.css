@@ -10,4 +10,7 @@
   .thing {
     position: static !important;
   }
+  .announcement {
+    margin-top: 100px;
+  }
 }
