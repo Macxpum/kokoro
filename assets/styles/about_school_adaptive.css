@@ -5,6 +5,6 @@
   .footer-nav {
     display: flex;
     zoom: 0.7;
-    padding: 20px;
+    flex-direction: column;
   }
 }
