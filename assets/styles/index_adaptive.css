@@ -87,7 +87,7 @@
     justify-content: space-between;
   }
   .map > div {
-    zoom: 0.4;
+    zoom: 0.7;
     width: 302px;
     height: 500px;
   }
