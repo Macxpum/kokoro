@@ -5,8 +5,8 @@
 */
   header {
     width: 350px;
-    height: auto;
-    margin-bottom: 24px;
+    height: 70px;
+    margin: 0;
   }
   .footer-nav {
     display: none;
