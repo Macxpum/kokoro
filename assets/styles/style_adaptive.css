@@ -8,9 +8,17 @@
     height: auto;
     margin-bottom: 24px;
   }
-  .header-nav,
   .footer-nav {
     display: none;
+  }
+  .header-nav {
+    justify-content: space-between;
+  }
+  .header-nav > .header-ul {
+    display: none;
+  }
+  .hide-menu-el {
+    display: block;
   }
   a.logo {
     text-transform: uppercase;

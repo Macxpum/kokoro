@@ -1,4 +1,9 @@
 <nav class="header-nav">
+    <div class="open-btn hide-menu-el" onclick="openMobileMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+    </div>
     <a class="logo" href="/">KOKO<span>RO</span></a>
     <ul class="header-ul">
         <?php
@@ -15,11 +20,6 @@
         <li class="nav-link hover"><a href="news.php">новости</a></li>
         <li class="nav-link hover"><a href="contacts.php">контакты</a></li>
         <li class="nav-link hover"><a href="subscribe.php">записаться</a></li>
-        <div class="open-btn hide-menu-el" onclick="openMobileMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
-        </div>
     </ul>
 </nav>
 <nav class="header-nav-mobile">
