@@ -3,8 +3,11 @@
    ============ header ============ 
    ================================ 
 */
+  body {
+    zoom: 1;
+  }
   header {
-    width: 350px;
+    width: 100%;
     height: 70px;
     margin: 0;
   }
