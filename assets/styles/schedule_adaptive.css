@@ -7,15 +7,20 @@
     zoom: 0.7;
     padding: 20px;
   }
+  .first_class {
+    height: auto;
+  }
   .thing {
     position: static !important;
     text-wrap: wrap;
+    width: auto;
   }
   .announcement {
     margin-top: 100px;
   }
   .things {
-    padding: 0;
+    height: auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
