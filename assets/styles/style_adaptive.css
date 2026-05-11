@@ -8,9 +8,6 @@
     height: auto;
     margin-bottom: 24px;
   }
-  .header-nav-mobile {
-    display: flex;
-  }
   .header-nav,
   .footer-nav {
     display: none;

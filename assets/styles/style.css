@@ -120,6 +120,10 @@ a.logo {
 .open-btn {
   margin: 30px;
 }
+.hide-menu-el {
+  display: none;
+}
+
 header {
   position: sticky;
   top: 0;
