@@ -13,4 +13,7 @@
   .announcement {
     margin-top: 100px;
   }
+  .things {
+    padding: 0;
+  }
 }
