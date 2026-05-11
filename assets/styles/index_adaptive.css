@@ -1,6 +1,7 @@
 @media (max-width: 375px) {
   .greeting {
     margin-inline: 3px 17px;
+    padding: 0;
     width: 335px;
     height: 142px;
     display: flex;
@@ -27,9 +28,10 @@
   }
   .directions {
     width: 297px;
-    height: 319px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
   .direction {
     position: relative;
@@ -52,6 +54,8 @@
   .direction > p {
     font-size: 0.625rem;
     text-align: justify;
+    line-height: 1;
+    width: 70%;
   }
   .schedule {
     width: 93%;
@@ -64,6 +68,9 @@
   .schedule > h1 {
     font-size: 0.9375rem;
     margin-bottom: 20px;
+    height: auto;
+    line-height: 1.5;
+    padding: 0;
   }
   .groups {
     display: none;
