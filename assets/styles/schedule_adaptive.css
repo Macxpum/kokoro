@@ -8,6 +8,6 @@
     padding: 20px;
   }
   .thing {
-    position: static;
+    position: static !important;
   }
 }
