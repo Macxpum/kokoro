@@ -1,2 +1,5 @@
-@media (max-width: 480px) {
+@media (max-width: 1480px) {
+  main {
+    zoom: 0.2;
+  }
 }
