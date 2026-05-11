@@ -2,4 +2,7 @@
   main {
     zoom: 0.7;
   }
+  .title {
+    font-style: 2rem;
+  }
 }
